@@ -1,9 +1,9 @@
-//test
+//test2
 package school;
 
-public class Auto
+public class Auto2
 {
-	private double kmStand;
+	double kmStand;
     double tankInhalt;
     double tankVolumen;
     double durchschnittsVerbrauch;
@@ -13,7 +13,7 @@ public class Auto
 
     public void Auto_set(double kmStand, double tankVolumen, double durchschnittsVerbrauch, double aussentemperaturInGrad)
     {
-       
+
        this.kmStand = kmStand;
        this.tankVolumen = tankVolumen;
        this.durchschnittsVerbrauch = durchschnittsVerbrauch;
@@ -22,27 +22,27 @@ public class Auto
        motortemperaturInGrad = aussentemperaturInGrad;
        //Wir gehen davon aus, dass der Wagen zu Beginn vollgetankt ist!
        tankInhalt=tankVolumen;
-       
+
     }
-    
+
     public void fahren(double km)
     {
         verbrauch = durchschnittsVerbrauch*km/100;
-        
+
         if(tankInhalt>verbrauch)
         {
             kmStand+=km;
             tankInhalt = tankInhalt - verbrauch;
-            
+
                 if(motortemperaturInGrad+km <=100)
                 {
-                    motortemperaturInGrad +=km;   
+                    motortemperaturInGrad +=km;
                 }
                 else
                 {
-                    motortemperaturInGrad = 100;   
+                    motortemperaturInGrad = 100;
                 }
-            
+
         }
         else
         {
@@ -51,24 +51,24 @@ public class Auto
         }
         //kmStand += km;
         //verbrauch = durchschnittsVerbrauch*km/100;
-        //tankInhalt = tankInhalt - verbrauch;                       
+        //tankInhalt = tankInhalt - verbrauch;
     }
-    
+
     public void tanken(double tankMenge)
     {
         if(tankMenge<=tankVolumen-tankInhalt)
         {
             tankInhalt = tankInhalt + tankMenge;
-            
+
         }
         else if(tankMenge>tankVolumen-tankInhalt)
         {
             tankMenge=tankVolumen - tankInhalt;
             tankInhalt = tankVolumen;
         }
-       
+
     }
-    
+
 
     public void anzeigen()
     {
@@ -80,16 +80,16 @@ public class Auto
     }
     public static void main(String[]args)
     {
-    	Auto porsche=new Auto();
+    	Auto2 porsche=new Auto2();
     	porsche.Auto_set(1,1,1,1);
-    	Auto fahren=new Auto();
+    	Auto2 fahren=new Auto2();
     	fahren.fahren(1);
-    	Auto tanken=new Auto();
+    	Auto2 tanken=new Auto2();
     	tanken.tanken(1);
-    	Auto Daten=new Auto();
+    	Auto2 Daten=new Auto2();
     	Daten.anzeigen();
-    	
+
     }
 
-   
+
 }
