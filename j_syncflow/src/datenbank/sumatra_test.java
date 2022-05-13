@@ -21,8 +21,9 @@ public static void main(String[] args)
        
 	    String[] obj={"Mitarbeiter","Kunden","Lieferungen","Rezepte","Zutaten","Rezepte_Zutaten","Bestellungen"}; 
         
-        Object antwort = JOptionPane.showInputDialog(null, "Eingabemöglichkeiten", "Eingabefenster",
+        JOptionPane.showInputDialog(null, "Eingabemöglichkeiten", "Eingabefenster",
                 JOptionPane.INFORMATION_MESSAGE, null, obj,"Kunden");
+        
         
         
         
