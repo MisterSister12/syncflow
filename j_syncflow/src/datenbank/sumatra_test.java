@@ -1,7 +1,7 @@
 package datenbank;
 import java.sql.*;
 import javax.swing.JOptionPane;
-
+//sdsdf
 public class sumatra_test {
 
 public static void main(String[] args)
@@ -11,7 +11,7 @@ public static void main(String[] args)
 		
 	}
 	
-	
+
 	public static void Eingabefenster()
     {
 		String url = "jdbc:mysql://localhost:3306/sumatra_restaurant?useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Europe/Berlin";

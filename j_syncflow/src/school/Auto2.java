@@ -53,7 +53,7 @@ public class Auto2
         //verbrauch = durchschnittsVerbrauch*km/100;
         //tankInhalt = tankInhalt - verbrauch;
     }
-
+ 
     public void tanken(double tankMenge)
     {
         if(tankMenge<=tankVolumen-tankInhalt)
