@@ -44,7 +44,7 @@ public class Mathfuntions {
 		for(j=0;j<ar[i].length;j++){
 		for(k=0;k<ar[i][j].length;k++){
 			l++;
-	        	ar[i][j][k]=r.nextInt(10);
+	        	ar[i][j][k]=r.nextInt();
 	            	System.out.println(ar[i][j][k]+"werte");
 			
 				}
@@ -54,9 +54,9 @@ public class Mathfuntions {
 		
 	public static void main(String[]args) {
 		Mathfuntions a=new Mathfuntions();
-		int[][]samlung=new int[1][2];
-		System.out.println(Integer.MAX_VALUE);
 		
+		System.out.println(Integer.MAX_VALUE);
+		a.array();
 		
 	}
 }
