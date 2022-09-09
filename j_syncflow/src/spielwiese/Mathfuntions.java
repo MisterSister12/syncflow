@@ -1,5 +1,6 @@
 package spielwiese;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Mathfuntions {
@@ -51,12 +52,40 @@ public class Mathfuntions {
 			}
 		}
 	}
+	private int Randomintfromxtoy(int x,int y) {
+		int a;
+		a=rand.nextInt(x, y);
+		return a;
+	}
+	public double t(int i) {
+		
+		double p=0;
+		int j=0;
+		do {
+			p+=i;
+			j++;
+		}
+		while(j<10000);
+		p/=10000;
+		return p;
+	}
+	private void prime_filler(int arraylenth) {
+		ArrayList<Integer>Primenummbers=new ArrayList<Integer>();
+		ArrayList<Integer>samplenummber=new ArrayList<Integer>();
+		samplenummber.add(2);
+		for() {
+			
+		}
+		//samplenummber.remove(1);
+		System.out.println(samplenummber);
+	}
 		
 	public static void main(String[]args) {
 		Mathfuntions a=new Mathfuntions();
+		a.prime_filler(0);
 		
-		System.out.println(Integer.MAX_VALUE);
-		a.array();
-		
+		//System.out.println(String.CASE_INSENSITIVE_ORDER);
+		//System.out.println("1   "+a.t(a.Randomintfromxtoy(1,9)));
+		//System.out.println("1   "+a.Randomintfromxtoy(1,9)));
 	}
 }

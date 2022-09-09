@@ -1,18 +1,21 @@
 package spielwiese;
 
-import java.io.FileReader;
-import java.io.IOException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-
-public class test {
-	static void show() {
-		try {
-			var reader = new FileReader("file.txt");
-			var value = reader.read();
-			new SimpleDateFormat().parse("");
-		} catch (IOException | ParseException e) {
-			// TODO: handle exception
-		}
+public class test{
+	
+	private String name="Michael";
+	public void setName(String name) {
+		
+		this.name=name;
 	}
+	public String getname() {
+		return this.name;
+	}
+	
+	public static void main(String[]args) {
+		test b=new test();
+		b.setName("Tim");
+		System.out.println(b.getname());
+		System.out.println("test");
+	}
+	
 }
